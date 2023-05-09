@@ -4,7 +4,7 @@ This is a step-by-step guide on how to create a GPG key on [keybase.io](https://
 
 Although this guide was written for macOS, most commands should work in other operating systems as well.
 
-There's a [video](https://www.youtube.com/watch?v=4V-7KnhcrbY) published by [Timothy Miller](https://github.com/tjacobdesign) explaining some parts of this guide. [Discussion](https://news.ycombinator.com/item?id=12289481) on Hacker News. 
+There's a [video](https://www.youtube.com/watch?v=4V-7KnhcrbY) published by [Timothy Miller](https://github.com/tjacobdesign) explaining some parts of this guide. [Discussion](https://news.ycombinator.com/item?id=12289481) on Hacker News.
 
 > **Note**: If you **don't** want to use Keybase.io, follow [this guide][1] instead.
 > For manually transferring keys to different hosts, check out this [answer on Stack Overflow][2].
@@ -60,7 +60,7 @@ $ git config --global commit.gpgsign true
 $ open https://github.com/settings/keys
 # Click "New GPG key"
 
-# We can then use `export` with the `-q` or query flag to match on our key (the first 16 characters should do..) 
+# We can then use `export` with the `-q` or query flag to match on our key (the first 16 characters should do..)
 $ keybase pgp export -q CB86A866E870EE00 | pbcopy # copy public key to clipboard
 # Paste key, save
 ```
@@ -147,7 +147,7 @@ $ $EDITOR ~/.gnupg/gpg.conf
 no-tty
 ```
 
-## Optional: Setting up TTY  
+## Optional: Setting up TTY
 Depending on your personal setup, you might need to define the tty for gpg
 whenever your passphrase is prompted. Otherwise, you might encounter an `Inappropriate
 ioctl for device` error.
